@@ -8,8 +8,9 @@ Pod::Spec.new do |s|
     s.homepage     = "https://www.dingxiang-inc.com/docs/detail/captcha#doc-h3-12"
     s.license      = { :type => "Commercial", :text => "dingxiang-inc"}
     s.author       = { "CMBSDK" => "marketing@dingxiang-inc.com" }
-    s.source       = { :http => "https://github.com/letspod/DXCaptchaSDK/raw/master/DXCaptchaSDK-1.7.0.zip" }
+    s.source           = { :git => 'https://github.com/letspod/DXCaptchaSDK.git', :tag => s.version.to_s }
     s.requires_arc = true  
+    s.frameworks = 'libz','libresolv','libc++','SystemConfiguration','CoreLocation','CoreTelephony'
     s.ios.deployment_target = '8.0'
     s.vendored_frameworks ='DingxiangCaptchaSDK.framework'
     s.resource     = 'DXCaptcha.bundle'  
